@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "name": "markaz-lms",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.4.37",
+        "autoprefixer": "^10.4.20",
+        "axios": "^0.21.4",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.41",
+        "tailwindcss": "^3.4.9"
+    },
+    "dependencies": {
+        "@inertiajs/inertia": "^0.11.1",
+        "@inertiajs/vue3": "^1.3.0",
+        "@vitejs/plugin-vue": "^4.6.2",
+        "@vueuse/core": "^10.11.1",
+        "chart.js": "^4.4.7",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "d3": "^7.9.0",
+        "d3-org-chart": "^3.1.1",
+        "laravel-vite-plugin": "^0.7.4",
+        "laravel-vue-i18n": "^2.8.0",
+        "lucide-vue-next": "^0.427.0",
+        "radix-vue": "^1.9.3",
+        "sweetalert2": "^11.22.2",
+        "tailwind-merge": "^2.4.0",
+        "tailwindcss-animate": "^1.0.7",
+        "vite": "^4.5.3",
+        "vue": "^3.4.37",
+        "vuedraggable": "^4.1.0"
+    }
+}

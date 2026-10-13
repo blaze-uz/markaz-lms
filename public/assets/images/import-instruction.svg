@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2332" height="200" viewBox="0 0 2332 200">
+<rect width="2332" height="200" fill="#fff"/>
+<g fill="none" stroke="#d0d0d0" stroke-width="2">
+<rect x="1" y="1" width="2330" height="198"/>
+<path d="M0 100H2332"/>
+<path d="M70 0V200"/>
+<path d="M240 0V200"/>
+<path d="M490 0V200"/>
+<path d="M840 0V200"/>
+<path d="M1350 0V200"/>
+<path d="M1570 0V200"/>
+<path d="M1880 0V200"/>
+</g>
+<g fill="#222" font-family="Arial, sans-serif" font-size="28">
+<text x="16" y="60">#</text>
+<text x="16" y="160">1</text>
+<text x="86" y="60">Ism</text>
+<text x="86" y="160">Ali</text>
+<text x="256" y="60">Familya</text>
+<text x="256" y="160">Valiyev</text>
+<text x="506" y="60">Telefon raqami</text>
+<text x="506" y="160">998901234567</text>
+<text x="856" y="60">Ota-onasining telefon raqami</text>
+<text x="856" y="160">998901234567</text>
+<text x="1366" y="60">Jinsi</text>
+<text x="1366" y="160">Erkak</text>
+<text x="1586" y="60">Tug'ilgan sanasi</text>
+<text x="1586" y="160">10.01.2010</text>
+<text x="1896" y="60">Izoh</text>
+<text x="1896" y="160">Izoh (ixtiyoriy)</text>
+</g>
+</svg>

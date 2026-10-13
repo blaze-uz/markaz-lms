@@ -1,0 +1,22 @@
+@extends('layouts.master')
+@section('title')
+    @lang("translation.students.add")
+@stop
+@section('content')
+    {{ \Diglactic\Breadcrumbs\Breadcrumbs::render() }}
+    <form action="{{ route('admin.students.store') }}" method="POST" autocomplete="off">
+        @csrf
+        <div class="card">
+            @include("admin.students.partials.form")
+        </div>
+        <div class="mb-5">
+            <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <x-button id="detach-btn" class="btn-success">
+                    @lang("translation.btn.save")
+                </x-button>
+                <a href="{{ route("admin.students.index") }}" type="button"
+                   class="btn btn-warning">@lang("translation.btn.back")</a>
+            </div>
+        </div>
+    </form>
+@endsection
