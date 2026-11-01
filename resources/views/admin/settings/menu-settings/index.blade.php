@@ -32,7 +32,9 @@
 @endsection
 @section('script')
 <script src="{{ asset('assets/libs/sortablejs/Sortable.min.js') }}"></script>
-<script src="{{ asset('assets/js/nestable.init.js') }}"></script>
+@if (file_exists(public_path('assets/js/nestable.init.js')))
+    <script src="{{ asset('assets/js/nestable.init.js') }}"></script>
+@endif
 <script>
     document.addEventListener('DOMContentLoaded', function () {
             const nestedSortables = document.querySelectorAll('.nested-sortable');

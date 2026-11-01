@@ -86,7 +86,7 @@ The driver also supplies this URL on single and batch requests. An unset callbac
 
 ## Theme (Velzon)
 
-The paid Velzon theme is excluded. The original Blade pages retain their existing classes and render without theme styling until you copy the assets from your own Velzon v3.0.0 Laravel licence. Copied theme assets are ignored by Git and are not covered by this project's MIT licence.
+The paid Velzon theme is excluded. The original Blade pages retain their existing classes and render without theme styling until you copy the assets from your own Velzon v3.0.0 Laravel licence. Copied theme assets are ignored by Git and are not covered by this project's MIT licence. Pages request each theme file only if it exists, so a bare install has no missing-file errors and copied files load without a rebuild.
 
 Copy these files from the Velzon v3.0.0 Laravel package (paths checked against the package this project was originally built on):
 
@@ -125,4 +125,4 @@ npm run build
 php artisan serve
 ```
 
-Standart sozlamalar Redis talab qilmaydi: navbat `sync`, kesh va sessiya `file`, SMS `log`. Haqiqiy SMS uchun yuqoridagi Eskiz sozlamalarini kiriting. Cron uchun yuqoridagi `schedule:run` qatorini qo'shing; fon navbati uchun `QUEUE_CONNECTION=database` va `queue:work --queue=sms,default --tries=3` ishlating. Sahifalarni bezash uchun yuqoridagi mavzu bo'limiga ko'ra o'z litsenziyangizdagi fayllarni ko'chiring. Loyiha MIT litsenziyasida.
+Standart sozlamalar Redis talab qilmaydi: navbat `sync`, kesh va sessiya `file`, SMS `log`. Haqiqiy SMS uchun yuqoridagi Eskiz sozlamalarini kiriting. Cron uchun yuqoridagi `schedule:run` qatorini qo'shing; fon navbati uchun `QUEUE_CONNECTION=database` va `queue:work --queue=sms,default --tries=3` ishlating. Sahifalarni bezash uchun yuqoridagi mavzu bo'limiga ko'ra o'z litsenziyangizdagi fayllarni ko'chiring: ularsiz sahifalar bezaksiz ochiladi, ko'chirilgan fayllar esa qayta build'siz yuklanadi. Loyiha MIT litsenziyasida.

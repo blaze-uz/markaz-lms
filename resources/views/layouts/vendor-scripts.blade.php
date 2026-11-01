@@ -13,7 +13,10 @@
 <script src="{{ asset('assets/js/poppy.min.js') }}"></script>
 <script src="{{ asset('assets/js/tippy.min.js') }}"></script>
 
-<script src="{{ asset('assets/js/theme.js') }}"></script>
+{{-- Paid theme file, not in the repository (see README). --}}
+@if (file_exists(public_path('assets/js/theme.js')))
+    <script src="{{ asset('assets/js/theme.js') }}"></script>
+@endif
 <script>
     // Add an event listener for when the modal is shown
     document.getElementById('searchModal').addEventListener('shown.bs.modal', function () {
