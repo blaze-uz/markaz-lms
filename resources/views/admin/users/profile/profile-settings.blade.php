@@ -289,7 +289,9 @@
     </div>
 @endsection
 @section('script')
-    <script src="{{ asset('assets/js/profile-setting.init.js') }}"></script>
+    @if (file_exists(public_path('assets/js/profile-setting.init.js')))
+        <script src="{{ asset('assets/js/profile-setting.init.js') }}"></script>
+    @endif
     <script>
         @if ($errors->any())
             @foreach ($errors->all() as $error)
